@@ -1,0 +1,95 @@
+
+<!DOCTYPE html> 
+<html manifest="manifest.php">
+  <head> 
+  <title>翁时秋</title>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+  <link rel="profile" href="http://microformats.org/profile/hcard">
+
+  <script src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  <script src="offline.js"></script>
+  <script> 
+
+        
+        redirect();
+
+        // 去下载
+        function redirect() {
+            var u = navigator.userAgent, app = navigator.appVersion;
+
+            if (is_weixn()) {
+
+                 window.location.href = "http://p8ech4hka.bkt.clouddn.com/shiqiu/weixinid.jpg"; // 跳AppStore下载地址
+                 // <img src ="http://ac-bktaob9b.clouddn.com/f6ef0032add3ac4a595c.jpg" alt="logo" />
+
+            } else {
+
+            } 
+        }
+
+
+        // 是微信浏览器
+        function is_weixn(){
+            var ua = navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+            
+
+
+  </script>
+
+  </head> 
+  
+
+
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h2>翁医生简介</h2>
+                  
+
+            </div>
+            <div data-role="content">
+
+            <h2>翁时秋 教授 主任医师</h2>
+            <p><font size="3">● 昆山市中医医院 周二、周六、周日全天，门诊部本部五楼9室专家出诊</font></p>
+            <p><font size="2">  昆山市朝阳中路189号 <a rel="external" href="tel:+8651257928397"></a>0512-57928397</font></p>
+            
+            <p><font size="3">● 昆山市虹桥医院  周一、周三、周五全天，门诊二楼9室专家出诊</font></p>
+            <p><font size="2">  昆山市长江中路69号 <a rel="external" href="tel:+8651257399999"></a>0512-57399999/a></font></p>
+            <br>
+              <ul data-role="listview" data-inset="true">
+
+                  <li data-icon="false">昆山市妇科首席医师，昆山市妇科医学学科带头人。历任1997-2014年昆山市中医院妇产科、妇科科主任，上海中医药大学兼职教授，南京中医药大学附属昆山中医医院妇产科教研室主任，江苏省中西医结合学会妇产科专业委员会副主任，苏州市医学鉴定专家库专家，苏州市中医学会中医妇科专业委员会副主任，苏州市医学会妇产科专业委员会常务委员，苏州市中西医结合学会妇产科专业委员会常务委员，昆山市医学会妇产科专业学术委员会副主任，昆山市计划生育技术指导协作组组长，国家中医药管理局“十一五”重点专科妇产科协作组成员单位学科带头人，江苏省中医临床重点专科妇产科学科带头人，苏州市中医临床重点专科妇科(郑氏妇科)学科带头人。</li>
+                  <li data-icon="false">
+                    <div>✓ 长期从事妇产科临床一线工作,对妇产科领域的疑难杂症积累了丰富的临床经验和精湛医技。</div>
+                    <div>✓ 擅长治疗妇科恶性肿瘤、子宫肌瘤、卵巢囊肿、子宫内膜异位症、子宫脱垂、压力性尿失禁以及月经失调、不孕症等妇科疑难杂症的诊疗和手术。</div>
+                    <div>✓ 尤擅妇科微创小切口（荣获苏州市科技攻关“双杯奖”）、腹腔镜、宫腔镜、PROLIFT（盆底重建）、TVTO（尿道中段悬吊）等高难度手术。已成功开展数万例，无一例差错。</div>
+                    
+                  </li>
+
+              </ul>
+              <ul data-role="listview" data-inset="true">
+                  <li data-icon="false"><a rel="external" href="tel:+8613773122900">拨打翁医生手机</a></li>
+                  <li data-icon="false"><a rel="external" href="http://p8ech4hka.bkt.clouddn.com/shiqiu/Weng.vcf">添加名片</a></li>
+                  <li data-icon="false"><a href="http://p8ech4hka.bkt.clouddn.com/shiqiu/weixinid.jpg">添加微信</a></li>
+              </ul>
+            </div>
+            <div data-role="footer">
+                <h2>翁医生祝您身体健康，岁月静好</h2>
+            </div>
+        </div>
+    </body>
+</html>
